@@ -1,4 +1,4 @@
-/* gallery auto-load */
+/* gallery auto generation */
 
 const gallery=document.getElementById("gallery-grid")
 
@@ -72,11 +72,14 @@ document.body.style.overflow="auto"
 }
 
 
-/* burger menu */
+/* BURGER MENU */
 
 const burger=document.getElementById("burger")
 const nav=document.getElementById("nav")
 
-burger.onclick=()=>{
+burger.addEventListener("click",()=>{
+
+burger.classList.toggle("active")
 nav.classList.toggle("show")
-}
+
+})
