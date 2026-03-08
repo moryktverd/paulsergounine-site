@@ -13,20 +13,45 @@ top:0;
 width:100%;
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px 60px;
 background:white;
 z-index:100;
 }
 
 .logo{
-font-family:Playfair Display;
+font-family:"Playfair Display";
 font-size:20px;
 }
 
+/* nav */
+
+.nav{
+display:flex;
+gap:30px;
+}
+
 .nav a{
-margin-left:30px;
 text-decoration:none;
 color:#111;
+}
+
+/* burger */
+
+.burger{
+display:none;
+flex-direction:column;
+gap:5px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+.burger span{
+width:25px;
+height:2px;
+background:black;
+display:block;
 }
 
 /* hero */
@@ -51,39 +76,23 @@ color:white;
 
 .hero-overlay h1{
 font-size:64px;
-font-family:Playfair Display;
+font-family:"Playfair Display";
 }
 
-/* ABOUT — музейная типографика */
+/* about */
 
 .about{
-
 max-width:720px;
 margin:auto;
-
-padding-top:180px;
-padding-bottom:160px;
-
-padding-left:20px;
-padding-right:20px;
-
+padding:180px 20px;
 line-height:1.9;
 font-size:18px;
-
 }
 
 .about h2{
-
-font-family:Playfair Display;
+font-family:"Playfair Display";
 font-size:40px;
 margin-bottom:60px;
-
-}
-
-.about p{
-
-margin-bottom:32px;
-
 }
 
 /* gallery */
@@ -93,11 +102,9 @@ padding:120px 10%;
 }
 
 .gallery h2{
-
-font-family:Playfair Display;
+font-family:"Playfair Display";
 font-size:40px;
 margin-bottom:60px;
-
 }
 
 .gallery-grid{
@@ -180,33 +187,43 @@ cursor:pointer;
 /* contact */
 
 .contact{
-
 padding:140px 20px;
-
 text-align:center;
-
 background:#f3f3f3;
-
-}
-
-.contact h2{
-
-font-family:Playfair Display;
-font-size:40px;
-
 }
 
 .contact a{
-
 color:#111;
 text-decoration:none;
 font-weight:500;
-
 }
 
-/* MOBILE */
+/* mobile */
 
 @media(max-width:900px){
+
+.header{
+padding:15px 20px;
+}
+
+.nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:20px;
+background:white;
+padding:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.nav.show{
+display:flex;
+}
+
+.burger{
+display:flex;
+}
 
 .hero-overlay{
 left:30px;
@@ -218,12 +235,8 @@ font-size:36px;
 }
 
 .about{
-
-padding-top:140px;
-padding-bottom:120px;
-
+padding:140px 20px;
 font-size:17px;
-
 }
 
 .gallery{
