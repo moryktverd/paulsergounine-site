@@ -1,3 +1,5 @@
+/* gallery auto-load */
+
 const gallery=document.getElementById("gallery-grid")
 
 const totalWorks=10
@@ -67,4 +69,14 @@ viewerImg.src=list[index].src
 closeBtn.onclick=()=>{
 viewer.style.display="none"
 document.body.style.overflow="auto"
+}
+
+
+/* burger menu */
+
+const burger=document.getElementById("burger")
+const nav=document.getElementById("nav")
+
+burger.onclick=()=>{
+nav.classList.toggle("show")
 }
