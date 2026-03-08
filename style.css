@@ -5,7 +5,7 @@ background:#fafafa;
 color:#111;
 }
 
-/* header */
+/* HEADER */
 
 .header{
 position:fixed;
@@ -24,7 +24,7 @@ font-family:"Playfair Display";
 font-size:20px;
 }
 
-/* nav */
+/* NAVIGATION */
 
 .nav{
 display:flex;
@@ -34,27 +34,46 @@ gap:30px;
 .nav a{
 text-decoration:none;
 color:#111;
+font-size:16px;
 }
 
-/* burger */
+/* BURGER MENU */
 
 .burger{
 display:none;
 flex-direction:column;
-gap:5px;
+justify-content:center;
+gap:6px;
 background:none;
 border:none;
 cursor:pointer;
+padding:8px;
 }
 
 .burger span{
-width:25px;
-height:2px;
-background:black;
+width:32px;
+height:3px;
+background:#111;
 display:block;
+border-radius:3px;
+transition:all .3s ease;
 }
 
-/* hero */
+/* BURGER ANIMATION */
+
+.burger.active span:nth-child(1){
+transform:rotate(45deg) translate(6px,6px);
+}
+
+.burger.active span:nth-child(2){
+opacity:0;
+}
+
+.burger.active span:nth-child(3){
+transform:rotate(-45deg) translate(7px,-7px);
+}
+
+/* HERO */
 
 .hero{
 height:100vh;
@@ -79,7 +98,7 @@ font-size:64px;
 font-family:"Playfair Display";
 }
 
-/* about */
+/* ABOUT */
 
 .about{
 max-width:720px;
@@ -95,7 +114,7 @@ font-size:40px;
 margin-bottom:60px;
 }
 
-/* gallery */
+/* GALLERY */
 
 .gallery{
 padding:120px 10%;
@@ -144,7 +163,7 @@ transition:.3s;
 opacity:1;
 }
 
-/* viewer */
+/* IMAGE VIEWER */
 
 .viewer{
 position:fixed;
@@ -184,7 +203,7 @@ cursor:pointer;
 .left{left:40px;}
 .right{right:40px;}
 
-/* contact */
+/* CONTACT */
 
 .contact{
 padding:140px 20px;
@@ -198,13 +217,21 @@ text-decoration:none;
 font-weight:500;
 }
 
-/* mobile */
+/* MOBILE */
 
 @media(max-width:900px){
 
 .header{
 padding:15px 20px;
 }
+
+/* burger visible */
+
+.burger{
+display:flex;
+}
+
+/* hide nav */
 
 .nav{
 display:none;
@@ -218,10 +245,6 @@ box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .nav.show{
-display:flex;
-}
-
-.burger{
 display:flex;
 }
 
