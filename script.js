@@ -13,7 +13,7 @@ let img=document.createElement("img")
 img.src=`images/artworks/work${String(i).padStart(2,'0')}.webp`
 
 let span=document.createElement("span")
-span.innerText=`Totem ${i}`
+span.innerText = "100×120 cm — Oil Pastel on Canvas"
 
 div.appendChild(img)
 div.appendChild(span)
