@@ -2,7 +2,7 @@
 
 const gallery=document.getElementById("gallery-grid")
 
-const totalWorks=10
+const totalWorks=13
 
 for(let i=1;i<=totalWorks;i++){
 
