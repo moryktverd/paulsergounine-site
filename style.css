@@ -98,27 +98,38 @@ font-size:64px;
 font-family:"Playfair Display";
 }
 
-/* ABOUT */
+/* ABOUT + STATEMENT */
 
-.about{
-max-width:720px;
-margin:auto;
-padding:180px 20px;
-line-height:1.9;
-font-size:18px;
-}
+.about,
 .statement{
 max-width:720px;
-margin:auto;
+margin:0 auto;
 padding:180px 20px;
 line-height:1.9;
 font-size:18px;
-text-align:center;
 }
-.about h2{
+
+/* заголовки */
+
+.about h2,
+.statement h2{
 font-family:"Playfair Display";
 font-size:40px;
 margin-bottom:60px;
+text-align:center;
+}
+
+/* только statement центрируем текст */
+
+.statement{
+text-align:center;
+}
+
+/* ограничиваем ширину текста */
+
+.statement p{
+max-width:600px;
+margin:0 auto 20px;
 }
 
 /* GALLERY */
@@ -232,13 +243,9 @@ font-weight:500;
 padding:15px 20px;
 }
 
-/* burger visible */
-
 .burger{
 display:flex;
 }
-
-/* hide nav */
 
 .nav{
 display:none;
@@ -264,7 +271,8 @@ bottom:60px;
 font-size:36px;
 }
 
-.about{
+.about,
+.statement{
 padding:140px 20px;
 font-size:17px;
 }
@@ -278,13 +286,16 @@ gap:40px;
 }
 
 }
+
+/* gallery subtitle */
+
 .gallery-subtitle {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  color: #aaa;
-  margin-top: -8px;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 12px;
+color: #aaa;
+margin-top: -8px;
+margin-bottom: 50px;
+letter-spacing: 2px;
+text-transform: uppercase;
 }
