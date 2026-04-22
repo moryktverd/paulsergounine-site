@@ -107,7 +107,14 @@ padding:180px 20px;
 line-height:1.9;
 font-size:18px;
 }
-
+.statement{
+max-width:720px;
+margin:auto;
+padding:180px 20px;
+line-height:1.9;
+font-size:18px;
+text-align:center;
+}
 .about h2{
 font-family:"Playfair Display";
 font-size:40px;
