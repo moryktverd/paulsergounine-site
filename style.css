@@ -119,17 +119,16 @@ margin-bottom:60px;
 text-align:center;
 }
 
-/* только statement центрируем текст */
+/* ВАЖНО: текст НЕ центрируем */
 
 .statement{
-text-align:center;
+text-align:left;
 }
 
-/* ограничиваем ширину текста */
+/* аккуратные абзацы */
 
 .statement p{
-max-width:600px;
-margin:0 auto 20px;
+margin-bottom:20px;
 }
 
 /* GALLERY */
@@ -287,7 +286,7 @@ gap:40px;
 
 }
 
-/* gallery subtitle */
+/* subtitle */
 
 .gallery-subtitle {
 text-align: center;
